@@ -30,9 +30,8 @@ printf "\nInstalling Packages"
 
 sudo apt-get install apt-transport-https -y
 
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg > /dev/null
-
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/bullseye.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add -
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list
 
 sudo apt-get update -y
 
@@ -65,4 +64,4 @@ sleep 5
 # reboot the device 
 
 printf "\n\n Rebooting now..."
-sudo reboot
+#sudo reboot

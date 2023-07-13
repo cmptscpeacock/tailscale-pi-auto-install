@@ -1,8 +1,8 @@
 # Tailscale Pi Auto Install
 
-This script will install Tailscale on a Raspberry Pi.
+This script will install Tailscale on a Raspberry Pi - Buster.
 
-1. The script can be invoked using:
+1. The script can be invoked using the following, but make sure you edit the subnet(s) to suit your network:
 
 #### Raspian
 ```bash
